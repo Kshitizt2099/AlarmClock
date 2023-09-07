@@ -1,0 +1,103 @@
+.Input{
+    background: rgba(23, 6, 6, 0.4);
+    border: 5px black solid;
+    border-radius: 10px;
+    height:400px;
+    width: 400px;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top:100px;
+    color: white;
+    box-shadow: inset 0 0 10px #0c0b08;
+}
+#Min{
+    display: inline;
+}
+.Current_Alarm{
+    height: 100px;
+    width:100px;
+   
+    
+    text-align: center;
+}
+.alarm{
+    position: absolute;
+    top:600px;
+    height: 400px;
+    width: 400px;
+    background:transparent;
+    background: rgba(23, 6, 6, 0.4);
+    border-radius:10px;
+}
+.main{
+    display: flex;
+    height:1200px;
+    width:100vw;
+   flex-direction: column ;
+   position: relative;
+   align-items: center;
+   justify-content: center;
+   background:url("https://cdn.pixabay.com/photo/2022/03/02/09/17/wallpaper-7042708_1280.jpg");
+
+   background-size: cover;
+   padding:30px;
+    
+
+     
+}
+.alarmdivs{
+    margin: 10px;
+    display: flex;
+   align-items: center;
+   justify-content: space-around;
+   background-color: aliceblue;
+   border: 3px solid salmon;
+   border-radius: 5px;
+}
+body{
+
+    min-height:1200px;
+    max-width: 100%;
+    margin: 0%;
+}
+
+#show{
+    color: white;
+    background-color: blue;
+    border: 1px solid blue;
+    border-radius: 5px;
+    font-size: medium;
+    width: 150px;
+    height: 50px;
+}
+#show:disabled{
+  background-color: red;
+  border: 1px solid red;
+}
+#hrs{
+    height: 30px;
+    width: 70px;
+}
+
+#Min{
+    height: 30px;
+    width: 70px;
+}
+
+#Stop{
+    background-color: blue;
+    border: 1px solid blue;
+    border-radius: 5px;
+    font-size: medium;
+    width: 150px;
+    height: 50px;
+    color: white;
+
+}
+#Stop:disabled{
+    background-color: red;
+    border: 1px solid red;
+}
