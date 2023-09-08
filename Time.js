@@ -103,6 +103,8 @@ function showtime(hrs,min,alarmlist)
   {
     ringtone.pause()
     view=false;
+    StopAlarmbtn.disabled=true;
+    showbutton.disabled=false;
   }
  }
 
@@ -147,7 +149,7 @@ if(alarmlist.length==0)
       cmin=`0`+cmin;
     }
     
-    StopAlarmbtn.addEventListener('click',()=>{  view=false; const delid=`${chr},${cmin}`; del(delid); showbutton.disabled=false; StopAlarmbtn.disabled=true;})
+    StopAlarmbtn.addEventListener('click',()=>{  view=false; const delid=`${chr},${cmin}`; del(delid);})
 
   }
   }
