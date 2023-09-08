@@ -50,7 +50,15 @@ function showtime(hrs,min,alarmlist)
   for(let i=0;i<alarmlist.length;i++)
   {
     let ce=alarmlist[i].replace(",",":")  
-    a+=`<div  class="alarmdivs" id=${alarmlist[i]}><h4>${ce}</h4>   <img class="del" id=${alarmlist[i]+'del'}  src="https://cdn-icons-png.flaticon.com/512/6861/6861362.png" width=20 height=20></div>`
+    let desc="AM"
+    let index=ce.indexOf(":")
+    let deschrs=ce.slice(0,index)
+    console.log(deschrs)
+    if(deschrs>12)
+    {
+       desc="PM"
+    }
+    a+=`<div  class="alarmdivs" id=${alarmlist[i]}><h4>${ce+" "+desc}</h4>   <img class="del" id=${alarmlist[i]+'del'}  src="https://cdn-icons-png.flaticon.com/512/6861/6861362.png" width=20 height=20></div>`
   }
   allalarm.innerHTML=a;
   allalarms();
@@ -143,12 +151,7 @@ if(alarmlist.length==0)
 
   }
   }
-  /*if(chr==hrscontainer.value && cmin==Mincontainer.value && view==true)
-  {
-    console.log("it's Morbin time")
-    ringtone.play();
-    ringtone.loop=true;
-  }*/
+
 
 
 },1000);
