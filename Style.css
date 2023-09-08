@@ -66,16 +66,21 @@ body{
 
 #show{
     color: white;
-    background-color: blue;
-    border: 1px solid blue;
+    background-color: rgb(21, 208, 21);
+    border: 1px solid rgb(21, 208, 21);
     border-radius: 5px;
     font-size: medium;
     width: 150px;
     height: 50px;
 }
+
 #show:disabled{
-  background-color: red;
-  border: 1px solid red;
+  background-color: grey;
+  border: 1px solid grey;
+}
+
+#show:hover{
+    cursor: pointer;
 }
 #hrs{
     height: 30px;
@@ -100,4 +105,7 @@ body{
 #Stop:disabled{
     background-color: red;
     border: 1px solid red;
+}
+#Stop:hover{
+     cursor: pointer;
 }
