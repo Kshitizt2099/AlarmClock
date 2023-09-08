@@ -109,3 +109,6 @@ body{
 #Stop:hover{
      cursor: pointer;
 }
+.del:hover{
+    cursor: pointer;
+}
