@@ -7,6 +7,7 @@ showbutton.hidden=false
 
 
 const StopAlarmbtn=document.getElementById("Stop")
+StopAlarmbtn.disabled=true;
 console.log(StopAlarmbtn)
 let view=false
 //Making Hourslist 
@@ -132,7 +133,7 @@ if(alarmlist.length==0)
     ringtone.play();
     ringtone.loop=true;
     showbutton.disabled=true;
-  
+    StopAlarmbtn.disabled=false;
     if(cmin<10)
     {
       cmin=`0`+cmin;
